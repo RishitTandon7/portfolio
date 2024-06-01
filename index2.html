@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="Img\Screenshot 2024-05-25 211956.png" rel="icon">
-  <link href="Img\Screenshot 2024-05-25 211956.png" rel="apple-touch-icon">
+  <link href="portfolio.github.io/Img/Screenshot 2024-05-25 211956.png" rel="icon">
+  <!--<link href="portfolio.github.io\Img\Screenshot 2024-05-25 211956.png" rel="apple-touch-icon">-->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -81,56 +81,55 @@
   <!-- End Header -->
   
   <style>
-
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 100px; /* Adjust the gap to suit the larger items */
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-}
-
-.skill-logo {
-  width: 50px; /* Increase logo size */
-  height: 50px; /* Increase logo size */
-  margin-right: 30px; /* Increase margin for spacing */
-  vertical-align: middle;
-}
-
-.skill-item span {
-  font-size: 2em; /* Increase font size */
-  color: white; /* Ensure text is visible on dark background */
-}
-
-
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 100px; /* Adjust the gap to suit the larger items */
+    }
+  
+    .skill-item {
+      display: flex;
+      align-items: center;
+    }
+  
+    .skill-logo {
+      width: 50px; /* Increase logo size */
+      height: 50px; /* Increase logo size */
+      margin-right: 30px; /* Increase margin for spacing */
+      vertical-align: middle;
+    }
+  
+    .skill-item span {
+      font-size: 2em; /* Increase font size */
+      color: white; /* Ensure text is visible on dark background */
+    }
+  
     .box-shadow-full {
-  background-image: url('C:\Users\Rishit Tandon\Desktop\PF\Img\image.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  position: relative;
-}
-.box-shadow-full::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-  border-radius: 10px;
-}
-.box-shadow-full * {
-  position: relative;
-  z-index: 1;
-}
-
-
+      background-image: url('C:/Users/Rishit Tandon/Desktop/PF/Img/image.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      position: relative;
+    }
+  
+    .box-shadow-full::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+      border-radius: 10px;
+    }
+  
+    .box-shadow-full * {
+      position: relative;
+      z-index: 1;
+    }
+  
     #hero {
       position: relative;
       display: flex;
@@ -142,7 +141,7 @@
     #hero::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: 5%;
       left: 0;
       width: 50%; /* Adjust the width as needed */
       height: 100%;
@@ -156,10 +155,81 @@
       position: relative;
       z-index: 1;
       width: 50%; /* Adjust the width as needed */
-      padding: 20px;
+      padding: 80px;
       color: white;
     }
+  
+    @media (max-width: 1200px) {
+      .skill-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+      }
+  
+      #hero::before {
+        width: 40%;
+        background-size: contain;
+      }
+  
+      .hero-content {
+        width: 60%;
+      }
+    }
+  
+    @media (max-width: 992px) {
+      .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+  
+      #hero::before {
+        width: 35%;
+      }
+  
+      .hero-content {
+        width: 65%;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .skill-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+  
+      #hero {
+        flex-direction: column;
+        justify-content: center;
+      }
+  
+      #hero::before {
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+      }
+  
+      .hero-content {
+        width: 100%;
+        padding: 50px;
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .skill-logo {
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+      }
+  
+      .skill-item span {
+        font-size: 1.5em;
+      }
+  
+      #hero::before {
+        height: 30%;
+      }
+    }
   </style>
+  
   
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="hero route bg-image">
