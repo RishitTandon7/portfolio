@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="portfolio.github.io/Img/Screenshot 2024-05-25 211956.png" rel="icon">
-  <!--<link href="portfolio.github.io\Img\Screenshot 2024-05-25 211956.png" rel="apple-touch-icon">-->
+  <link href="portfolio.github.io\Img\Screenshot 2024-05-25 211956.png" rel="apple-touch-icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -51,12 +51,14 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#education">Education</a></li>
           <!-- <li><a class="nav-link scrollto" href="#services">Achievements</a></li> -->
+          <li><a class ="nav-link scrollto" href="#Projects">About</a></li>
           <li><a class="nav-link scrollto " href="#work">Achievements</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul> 
-              <li><a href="#">Drop Down 1</a></li>
+              <!--<li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -70,7 +72,7 @@
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
             </ul>
-          </li>
+          </li>-->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -81,6 +83,68 @@
   <!-- End Header -->
   
   <style>
+
+/* Education Section Styling */
+.education-mf {
+  padding: 60px 0;
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+.title-box {
+  margin-bottom: 40px;
+}
+
+.title-a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #81fbff;
+}
+
+.line-mf {
+  width: 50px;
+  height: 3px;
+  background-color: #81fbff;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.education-content {
+  background-color: #c3d1de;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.education-content h4 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education-content p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.education-content .institution {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.education-content .degree {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555;
+}
+
+.education-content .year {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
     .skill-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -314,8 +378,43 @@
                     <img src="Img\sql.png" alt="MySQL Logo" class="skill-logo">
                     <span>MySQL</span>
                   </div>
+                  <div class="skill-item">
+                    <img src="Img/cshap.png" alt="MySQL Logo" class="skill-logo">
+                    <span>C#</span>
+                  </div>
+                  <div class="skill-item">
+                    <img src="Img/net.png" alt="MySQL Logo" class="skill-logo">
+                    <span>.NET</span>
+                  </div>
                 </div>
               </div>
+              <hr>
+              <br>
+              <br>
+              <!--             
+              ======= Projects Section ======= 
+            </div>
+            <div class="col">
+              <div class="about-me pt-4 pt-md-0">
+                <div class="title-box-3">
+                  <h5 class="title-left" style="color:rgb(215, 46, 40); font-size:250%;">My Projects</h5>
+                </div>
+                <p class="lead"> 
+                     
+                </p>
+                <p class="lead">1. MedAssist: Virtual Doctor(Whatsapp chat bot & Medicine Delivery Robot) </p>
+                <p class="lead">2. ULTRON: Virtual Assistant </p>
+                <p class="lead">3.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>--> 
+              <!-- ==== Projects Section Ends ===== -->
+
             </div>
             <div class="col-md-6">
               <div class="about-me pt-4 pt-md-0">
@@ -334,6 +433,43 @@
   </div>
 </section>
 <!-- End About Section -->
+ <!--============  EDUCATION ================-->
+<section id="education" class="education-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Education
+          </h3>
+          <div class="line-mf"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="education-content">
+          <h4>SRM</h4>
+          <p class="institution">B.Tech</p>
+          <p class="degree">Computer Science and Engineering </p>
+          <p class="year">2023 - 2027</p>
+        </div>
+        <div class="education-content">
+          <h4>Delhi Public School</h4>
+          <p class="institution">Intermediate </p>
+          <p class="degree">Science Stream</p>
+          <p class="year">2021 - 2023</p>
+        </div>
+        <div class="education-content">
+          <h4>Seth M.R. Jaipuria</h4>
+          <p class="institution">Schooling & HighSchool</p>
+          <p class="degree">Computer Science(6th Subject)</p>
+          <p class="year">2011 - 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- ======= Portfolio Section ======= -->
     <section id="work" class="portfolio-mf sect-pt4 route">
